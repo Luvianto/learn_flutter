@@ -14,6 +14,9 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
+    //
+    // Use Consumer to build the widget
+    //
     return Consumer<CounterModel>(
         builder: (context, value, child) => Scaffold(
               appBar: AppBar(
@@ -36,7 +39,13 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               floatingActionButton: FloatingActionButton(
                 onPressed: () {
+                  //
+                  // Take the CouterModel
+                  //
                   final counter = context.read<CounterModel>();
+                  //
+                  // increment method from the CounterModel class
+                  //
                   counter.increment();
                 },
                 tooltip: 'Increment',
