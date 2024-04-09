@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_provider/counter_model.dart';
+import 'package:learn_flutter/learn_provider/counter_model.dart';
 import 'package:provider/provider.dart';
 
 class MyHomePage extends StatefulWidget {
